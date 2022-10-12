@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="icon" type="image" href="https://www.pngfind.com/pngs/m/33-333200_download-svg-download-png-vote-icon-png-transparent.png">
+    <title>Vervaite-mi.bg</title>
+    
+   <style>
+    .card-img-top{
+        width: 100%;
+        height: 18rem !important;
+    } 
+   </style>
+</head>
+<body>
+   
+    <div id="login">
+        <form id="loginForm">
+            <img src="https://pharmaceutical-journal.com/wp-content/uploads/2021/01/many-hands-against-blue-background-16-927x617.jpg" alt="vote.png" style="width:100%">
+            <input required type="text" id="loginUsername" name="username" placeholder="Enter username">
+            <input id="loginPass" required type="password" name="password" placeholder="Password">
+            <p class="error" id="loginError">Wrong credentials</p>
+            <button id="loginButton" type="submit"> Login </button>
+            <button type="button" id= "registerInLogin"><a href="#register">dont have an account yet?</a></button>
+        </form>
+    </div>
+ 
+    <div id="register">
+        <form id="registerForm">
+            <img src="https://pharmaceutical-journal.com/wp-content/uploads/2021/01/many-hands-against-blue-background-16-927x617.jpg" alt="vote.png" style="width:100%">
+            <input type="name" id="usernameReg" placeholder="enter username" name="name" required>
+            <input required type="password" name="password" id="password" placeholder="Password">
+            <input required type="password" name="confirmPass" id="confirmPassword" placeholder="Confirm your password">
+            <p class="error"  id="passMismatchError">Your passwords don't match!</p>
+            <p class="error"  id="userExistsError">This username is already taken!</p>
+            <button type="submit" id="registerBtn" disabled>Register</button>
+            <button type="button" id="loginInReg"><a href="#login">already have account</a></button> 
+        </form>
+    </div>
+
+    <div id="header">
+        <h5 id="homepageLink">listings</h5>
+        <h5 id="welcomeExit"></h5>
+        <h5 id="exit">logout</h5>
+        
+    </div>
+   
+    <div id="homePage">
+        <div id="homePage1stPart">
+            <div id="inputWrapp"> <input id="searchByPartyName" type="text" placeholder="search by name"></div> 
+        </div>
+        <div id="results">
+            <img id="loadingGif" src="https://i.pinimg.com/originals/e7/7a/60/e77a6068aa8bb2731e3b6d835c09c84c.gif" alt="">
+        </div> 
+    </div>
+
+   
+    <div id="details"> 
+        <img id="loadingGif" src="https://i.pinimg.com/originals/e7/7a/60/e77a6068aa8bb2731e3b6d835c09c84c.gif" alt="">
+        
+    </div>
+
+    <div id="result">
+        <table id="electionResultInTable">
+                <tr>
+                    <th>PARTY</th>
+                    <th>Percent of 100</th>
+                </tr>
+                <tbody id="appendRes">
+
+                </tbody>
+            
+        </table>
+    </div> 
+
+    <div id="errorPage"><img src="https://kfg6bckb.media.zestyio.com/buzzfeed-404-page--1-.gif" id="alert" alt=""></div>
+
+    <footer id="footer">
+        <p style="text-decoration: none; color: white;">Alrights reserved &copy; 2022</p>
+        <address style="text-decoration: none; color: white;">
+            Website created by <a style="text-decoration: none; color: white;" href="mailto:evelina_martinova@outlook.com"><b style="color:white"> Evelina Martinova</b>  </a> 
+        </address>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="./assets/MVC/constants.js"></script>
+    <script src="./assets/MVC/view/utilityFunctions.js"></script>
+    <script src="./assets/MVC/model/UserManager.js"></script>
+    <script src="./assets/MVC/model/Router.js"></script>
+    <script src="./assets/MVC/controller/controller.js"></script> 
+    <script src="./assets/MVC/controller/index.js"></script>
+</body>
+</html>

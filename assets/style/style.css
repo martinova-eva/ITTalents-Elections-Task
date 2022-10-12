@@ -1,0 +1,143 @@
+         #register, #login{
+            margin-top: 20vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        #registerForm, #loginForm{
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            width: 25vw;
+            padding: 2vw 2vh;
+            border: 0.5rem solid  rgb(43, 52, 223);;
+        }
+        #login{
+            display: none;
+        }
+        .error {
+            display: none;
+        }
+        #header{
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;  
+            gap: 5vw;
+            padding: 5vh 5vw;
+            margin-bottom: 2vh;
+            background: rgb(43, 52, 223); 
+            color: white;
+            cursor: pointer;
+        }
+        #footer{
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;  
+            gap: 5vw;
+            padding: 5vh 5vw;
+            margin-top: 20vh;
+            background:  rgb(43, 52, 223);
+            cursor: pointer;
+            
+        }
+        #homePage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #homePage1stPart{
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+        #searchByCountryName{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2vh 2vw;
+        }
+        #inputWrapp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2vh 0;
+        }
+        #results{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1em;
+            align-content: stretch;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        #details{
+            margin: 1vh 1vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #result{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1em;
+            align-content: stretch;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .card{
+            width: 18rem;
+        }
+        .btn-primary{
+            margin: 2px 2px;
+        }
+        #loadingGif{
+            border: 3px solid rgb(239, 96, 44);
+            display: none;
+            height: 80%;
+        }
+        #errorPage{
+            display: none;
+        }
+        .wrapperDetails{
+            display: flex;
+            margin: 3vh 3vw;
+        }
+        .card > img{
+            height: 100%;
+            
+        }
+        .cardDetails > img{
+            height: 100%;
+            width: 100%;
+        }
+        .card-body{
+            height: 8rem;
+        }
+        .cardDetails{
+           max-width: 50%;
+            margin: 3vh 1vw;
+        }
+        .secondPack{
+            gap: 3vh;
+            padding: 5vh 0;
+            align-items: center;
+            justify-content: center;
+        }
+        table, tbody, tr, th, td{
+            border: 0.5px solid blue;
+            width: 80vw;
+        }
+        tr, th, td{
+            padding: 1vh 2vw;
+        }
+        #electionResultInTable{
+            margin: 10vh 0;
+        }
+        
